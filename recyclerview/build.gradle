@@ -8,14 +8,14 @@ def getDate() {
 
 def verCode = 14
 android {
-    signingConfigs {
-        signingConfig {
-            keyAlias 'xiaowu.com.cn'
-            keyPassword '123456'
-            storeFile file('/Users/mima123/Desktop/mykey.jks')
-            storePassword '123456'
-        }
-    }
+//    signingConfigs {
+//        signingConfig {
+//            keyAlias 'xiaowu.com.cn'
+//            keyPassword '123456'
+//            storeFile file('/Users/mima123/Desktop/mykey.jks')
+//            storePassword '123456'
+//        }
+//    }
     compileSdkVersion 24
     buildToolsVersion "25.0.0"
     defaultConfig {
