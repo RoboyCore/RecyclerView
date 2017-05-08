@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setAdapter(mAdapter);
     }
     public void click(View view){
+        Toast.makeText(this, "appcode+"+BuildConfig.API_SERVER_URL, Toast.LENGTH_SHORT).show();
         switch (view.getId()) {
             case R.id.btn_01:
                 for (int i = 0; i < 5; i++) {
