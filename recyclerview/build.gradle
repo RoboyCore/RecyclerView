@@ -61,6 +61,9 @@ android {
         zhushou91 {
             manifestPlaceholders = [UMENG_CHANNEL_VALUE: "zhushou91"]
         }
+        yingyongbao {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "yingyongbao"]
+        }
     }
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
