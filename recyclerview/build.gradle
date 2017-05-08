@@ -27,7 +27,7 @@ android {
         buildConfigField "boolean", "LEO_DEBUG", "true"
         buildConfigField 'String', 'API_SERVER_URL', RELEASE_API_SERVER_URL
         buildConfigField 'String', 'API_SERVER_URL_MALL', RELEASE_API_SERVER_URL_MALL
-        signingConfig signingConfigs.signingConfig
+//        signingConfig signingConfigs.signingConfig
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
