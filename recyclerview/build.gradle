@@ -10,10 +10,10 @@ def verCode = 14
 android {
     signingConfigs {
         signingConfig {
-            keyAlias 'cis.com.cn'
-            keyPassword 'anchen'
-            storeFile file('/Users/mima123/Desktop/cis.jks')
-            storePassword 'anchen'
+            keyAlias 'xiaowu.com.cn'
+            keyPassword '123456'
+            storeFile file('/Users/mima123/Desktop/mykey.jks')
+            storePassword '123456'
         }
     }
     compileSdkVersion 24
@@ -22,8 +22,6 @@ android {
         applicationId "mobi.xiaowu.recyclerview"
         minSdkVersion 16
         targetSdkVersion 24
-
-        versionCode verCode
         versionName APP_VERSION
         resValue("string", 'app_version', APP_VERSION)
         buildConfigField "boolean", "LEO_DEBUG", "true"
@@ -31,7 +29,6 @@ android {
         buildConfigField 'String', 'API_SERVER_URL_MALL', RELEASE_API_SERVER_URL_MALL
         signingConfig signingConfigs.signingConfig
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
     buildTypes {
         release {
