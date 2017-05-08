@@ -9,7 +9,7 @@ def getDate() {
 def verCode = 14
 android {
     signingConfigs {
-        release {
+        signingConfig {
             keyAlias 'cis.com.cn'
             keyPassword 'anchen'
             storeFile file('/Users/mima123/Desktop/cis.jks')
@@ -29,7 +29,7 @@ android {
         buildConfigField "boolean", "LEO_DEBUG", "true"
         buildConfigField 'String', 'API_SERVER_URL', RELEASE_API_SERVER_URL
         buildConfigField 'String', 'API_SERVER_URL_MALL', RELEASE_API_SERVER_URL_MALL
-
+        signingConfig signingConfigs.signingConfig
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
@@ -44,7 +44,7 @@ android {
 //            zipAlignEnabled true
 //            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
+//            signingConfig signingConfigs.release
 
         }
         debug {
