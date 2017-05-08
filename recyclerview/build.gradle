@@ -10,7 +10,7 @@ def verCode = 14
 android {
     signingConfigs {
         release {
-            keyAlias 'com.cis.cn'
+            keyAlias 'cis.com.cn'
             keyPassword 'anchen'
             storeFile file('/Users/mima123/Desktop/cis.jks')
             storePassword 'anchen'
