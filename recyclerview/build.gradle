@@ -5,11 +5,19 @@ def getDate() {
     def formattedDate = date.format('yyyyMMddHHmm')
     return formattedDate
 }
+
 def verCode = 14
 android {
+    signingConfigs {
+        release {
+            keyAlias 'com.cis.cn'
+            keyPassword 'anchen'
+            storeFile file('/Users/mima123/Desktop/cis.jks')
+            storePassword 'anchen'
+        }
+    }
     compileSdkVersion 24
     buildToolsVersion "25.0.0"
-
     defaultConfig {
         applicationId "mobi.xiaowu.recyclerview"
         minSdkVersion 16
@@ -36,6 +44,8 @@ android {
 //            zipAlignEnabled true
 //            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+
         }
         debug {
             buildConfigField 'String', 'API_SERVER_URL', RELEASE_API_SERVER_URL
