@@ -75,7 +75,7 @@ android {
             if ("true".equals(IS_JENKINS)) {
                 timeNow = JENKINS_TIME
 //                outDirectory = '/Users/Shared/Jenkins/Home/workspace/apk'
-                outDirectory = '/Users/mima123/Desktop/aaaa'
+                outDirectory = './apk'
                 newName = 'zw-android-v' +
                         APP_VERSION + '-' + variant.productFlavors[0].name + timeNow + '-' + variant.buildType.name + '.apk'
             } else {
