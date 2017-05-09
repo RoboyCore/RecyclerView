@@ -5,5 +5,5 @@ package mobi.xiaowu.recyclerview;
  */
 
 public class Ex01Url {
-    public static final String URL="http://mobile.ximalaya.com/mobile/discovery/v1/categories?channel=and-a1&device=android&picVersion=13&scale=2";
+    public static final String URL=BuildConfig.API_SERVER_URL_MALL;
 }
